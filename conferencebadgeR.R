@@ -7,18 +7,29 @@ csv_file <- "name_badges.csv"
 logo_file <- "badge_logo.png"
 output_file <- "name_badges.pdf"
 
+# Options
+# Set to TRUE to print pronouns on the name badge if supplied at registration:
+show_pronouns <- TRUE
+
 # Read data
 people <- read_csv(
   csv_file,
   show_col_types = FALSE
 )
 
-# Check columns
+# Check required columns
 required_cols <- c(
   "first_name",
   "last_name",
   "institution"
 )
+
+if (show_pronouns) {
+  required_cols <- c(
+    required_cols,
+    "pronouns"
+  )
+}
 
 if (!all(required_cols %in% names(people))) {
   stop(
@@ -137,16 +148,45 @@ for (page in pages) {
       name_text
     )
     
+    # Move name slightly depending on whether pronouns are shown
+    name_y <- ifelse(
+      show_pronouns,
+      centre_y + 7,
+      centre_y + 5
+    )
+    
     grid.text(
       label = name_text,
       x = unit(centre_x + 10, "mm"),
-      y = unit(centre_y + 5, "mm"),
+      y = unit(name_y, "mm"),
       gp = gpar(
         fontsize = 18,
         fontface = "bold",
         lineheight = 0.95
       )
     )
+    
+    # Pronouns
+    if (show_pronouns) {
+      
+      pronoun_text <- page$pronouns[i]
+      
+      if (
+        !is.na(pronoun_text) &&
+        nzchar(trimws(pronoun_text))
+      ) {
+        
+        grid.text(
+          label = pronoun_text,
+          x = unit(centre_x + 10, "mm"),
+          y = unit(centre_y - 2, "mm"),
+          gp = gpar(
+            fontsize = 10,
+            fontface = "italic"
+          )
+        )
+      }
+    }
     
     # Institution
     institution_text <- paste(
@@ -157,10 +197,16 @@ for (page in pages) {
       collapse = "\n"
     )
     
+    institution_y <- ifelse(
+      show_pronouns,
+      centre_y - 12,
+      centre_y - 10
+    )
+    
     grid.text(
       label = institution_text,
       x = unit(centre_x + 10, "mm"),
-      y = unit(centre_y - 10, "mm"),
+      y = unit(institution_y, "mm"),
       gp = gpar(
         fontsize = 12,
         lineheight = 1

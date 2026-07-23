@@ -1,25 +1,25 @@
-first_name,last_name,institution
-Lucas,Okafor,University of Lagos
-Anastasia,García-Ruiz,Universidad Nacional Autónoma de México
-Amina,Natarajan,Indian Institute of Science
-Abebe,Zhang,Tsinghua University
-Mateo,Mensah,University of Ghana
-Thandiwe,Petrova,Sofia University St. Kliment Ohridski
-Yuki,Al-Hassan,American University of Beirut
-Arjun,da Silva,Universidade de São Paulo
-Chiamaka,Tanaka,Kyoto University
-Mereana,Moyo,University of Zimbabwe
-Joon-ho,Moreau,Université de Montréal
-Noor,Ben Youssef,Université de Tunis El Manar
-Samira,Fernández-Montenegro,Universidad Complutense de Madrid
-Fatou,Williams,Howard University
-Kwame,Mukherjee,University of Calcutta
-Omar,Diop,Université Cheikh Anta Diop
-Wei,Park,Seoul National University
-Élodie,Rodríguez,Universidad de Costa Rica
-María Fernanda,Tesfaye,Addis Ababa University
-Alejandro,Kowalska-Wojciechowska,Jagiellonian University
-Linh,El-Sayed,Alexandria University
-Sofia,Nguyễn,"Vietnam National University, Hanoi"
-Priya,Te Rangi,University of Otago
-Nia,Eze-Nwosu,"University of Nigeria, Nsukka"
+first_name,last_name,institution,pronouns
+Lucas,Okafor,University of Lagos,she/her
+Anastasia,García-Ruiz,Universidad Nacional Autónoma de México,he/him
+Amina,Natarajan,Indian Institute of Science,they/them
+Abebe,Zhang,Tsinghua University,
+Mateo,Mensah,University of Ghana,she/her
+Thandiwe,Petrova,Sofia University St. Kliment Ohridski,he/him
+Yuki,Al-Hassan,American University of Beirut,they/them
+Arjun,da Silva,Universidade de São Paulo,
+Chiamaka,Tanaka,Kyoto University,she/her
+Mereana,Moyo,University of Zimbabwe,he/him
+Joon-ho,Moreau,Université de Montréal,they/them
+Noor,Ben Youssef,Université de Tunis El Manar,
+Samira,Fernández-Montenegro,Universidad Complutense de Madrid,she/her
+Fatou,Williams,Howard University,he/him
+Kwame,Mukherjee,University of Calcutta,they/them
+Omar,Diop,Université Cheikh Anta Diop,
+Wei,Park,Seoul National University,she/her
+Élodie,Rodríguez,Universidad de Costa Rica,he/him
+María Fernanda,Tesfaye,Addis Ababa University,they/them
+Alejandro,Kowalska-Wojciechowska,Jagiellonian University,
+Linh,El-Sayed,Alexandria University,she/her
+Sofia,Nguyễn,"Vietnam National University, Hanoi",he/him
+Priya,Te Rangi,University of Otago,they/them
+Nia,Eze-Nwosu,"University of Nigeria, Nsukka",
