@@ -19,7 +19,7 @@ The output is a print-ready PDF.
 ---
 ## TL;DR: Quick start guide
 Put `conferencebadgeR.R`, `name_badges.csv`, and `badge_logo.png` in the same folder, then run or source `conferencebadgeR.R`.
-`name_badges.csv` must contain columns `first_name`, `last_name`, `institution`. Column `pronouns` is optional. Print `name_badges.pdf` and cut. The default output is 10 badges with size 90 × 54 mm.
+`name_badges.csv` must contain columns `first_name`, `last_name`, `institution`; column `pronouns` is optional (set `show_pronouns = FALSE`). Print `name_badges.pdf` and cut. The default output is 10 badges with size 90 × 54 mm.
 
 ---
 
