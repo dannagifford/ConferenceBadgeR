@@ -12,6 +12,7 @@ Each badge can contain:
 
 - first name and surname
 - institution
+- pronouns (optionally)
 - a custom background/logo image
 
 The output is a print-ready PDF.
