@@ -145,19 +145,7 @@ Institution names are wrapped separately beneath the attendee name.
 
 Pronouns can optionally be included on the badges.
 
-Near the top of the script, set:
-
-```r
-show_pronouns <- TRUE
-```
-
-to include pronouns, or:
-
-```r
-show_pronouns <- FALSE
-```
-
-to omit them.
+Near the top of the script, set `show_pronouns <- TRUE` to include pronouns, or `show_pronouns <- FALSE` to omit them.
 
 When `show_pronouns <- TRUE`, the input CSV must contain a `pronouns` column, for example:
 
