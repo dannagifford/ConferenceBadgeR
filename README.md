@@ -184,15 +184,13 @@ The `pronouns` field can be left blank for individual attendees. In that case, n
 
 When `show_pronouns <- FALSE`, the script ignores pronouns entirely and the CSV does not need to contain a `pronouns` column.
 
-The badge then uses the standard layout:
+The badge then uses the following layout:
 
 ```text
 Amina Okafor
 
 University of Lagos
 ```
-
-This allows the same script to be used for events that collect pronouns and events that do not.
 
 ## Unicode support
 
