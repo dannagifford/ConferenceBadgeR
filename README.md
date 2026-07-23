@@ -141,6 +141,59 @@ Wojciechowska
 
 Institution names are wrapped separately beneath the attendee name.
 
+## Pronouns
+
+Pronouns can optionally be included on the badges.
+
+Near the top of `make_badges.R`, set:
+
+```r
+show_pronouns <- TRUE
+```
+
+to include pronouns, or:
+
+```r
+show_pronouns <- FALSE
+```
+
+to omit them.
+
+When `show_pronouns <- TRUE`, the input CSV must contain a `pronouns` column, for example:
+
+```csv
+first_name,last_name,institution,pronouns
+Amina,Okafor,University of Lagos,she/her
+Mateo,García-Ruiz,Universidad Nacional Autónoma de México,he/him
+Alex,Patel,University of Manchester,they/them
+Linh,Nguyễn,Vietnam National University,
+```
+
+Pronouns are displayed between the attendee's name and institution.
+
+For example:
+
+```text
+Amina Okafor
+she/her
+
+University of Lagos
+```
+
+The `pronouns` field can be left blank for individual attendees. In that case, no pronouns are printed for that person.
+
+When `show_pronouns <- FALSE`, the script ignores pronouns entirely and the CSV does not need to contain a `pronouns` column.
+
+The badge then uses the standard layout:
+
+```text
+Amina Okafor
+
+University of Lagos
+```
+
+This allows the same script to be used for events that collect pronouns and events that do not.
+
 ## Unicode support
 
 The PDF is generated using `cairo_pdf()` so that names containing accented and non-ASCII characters can be rendered correctly, for example:
